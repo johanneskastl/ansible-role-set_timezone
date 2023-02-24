@@ -13,19 +13,27 @@ None.
 Role Variables
 --------------
 
-None.
+- `desired_timezone`: (String) The desired timezone, e.g. `Europe/Berlin`. Defaults to `Etc/UTC`.
 
 Dependencies
 ------------
 
 None
 
-Example Playbook
+Example Playbook (using the default of Etc/UTC)
 ----------------
 
     - hosts: servers
       roles:
         - role: 'johanneskastl.set_timezone'
+
+Example Playbook for timezone "Europe/Berlin"
+----------------
+
+    - hosts: servers
+      roles:
+        - role: 'johanneskastl.set_timezone'
+          desired_timezone: 'Europe/Berlin'
 
 License
 -------
