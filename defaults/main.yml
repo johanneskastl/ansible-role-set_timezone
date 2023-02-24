@@ -1,0 +1,4 @@
+---
+# set_timezone/defaults/main.yml
+
+desired_timezone: 'Etc/UTC'
